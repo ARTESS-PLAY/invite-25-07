@@ -1,0 +1,591 @@
+@font-face {
+    font-family: 'Mirra';
+    src: url('../fonts/Mirra.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Doloman Pavljenko';
+    src: url('../fonts/DolomanPavljenko.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #f1f0f6;
+    position: relative;
+}
+
+.container {
+    max-width: 430px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+p,
+.p {
+    font-family: 'Doloman Pavljenko';
+    color: #574758;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+a.p {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Mirra';
+    color: #796f7a;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70.4px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52.8px;
+}
+
+hr {
+    background-color: #887784;
+    border: 2px solid #887784;
+    border-radius: 1px;
+}
+
+.KandA {
+    display: flex;
+    flex-direction: column;
+    margin-top: 276px;
+    margin-bottom: 202px;
+    gap: 20px;
+}
+
+body {
+    position: relative;
+    background-color: rgba(241, 240, 246, 1);
+}
+
+.visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.visual > div {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-repeat: repeat;
+    z-index: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+.visual .textura {
+    background: url('../img/bg_textura.png');
+    mix-blend-mode: multiply;
+}
+
+.visual .images {
+    background: url('../img/bg_images.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+}
+
+.visual::after {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: url('../img/Вижуайло.png');
+    position: absolute;
+    content: '';
+    opacity: 50%;
+    background-position: top center;
+    /* background-position: -203px -508px; */
+    background-repeat: repeat;
+    z-index: 2;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    user-select: none;
+}
+
+.visual::before {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: url('../img/свет.png');
+    position: absolute;
+    content: '';
+    opacity: 60%;
+    /* background-position: -535px -299px; */
+    background-position: top center;
+    background-repeat: repeat;
+    z-index: 3;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    user-select: none;
+}
+
+@media screen and (min-width: 690px) {
+    body::after {
+        background-position: 0 0;
+    }
+}
+
+.KandA h1 {
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.KandA p {
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 137px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.date h1 {
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 18px;
+}
+
+.date hr {
+    width: 234px;
+    margin-bottom: 12px;
+}
+
+.dearF {
+    padding-left: 18px;
+    margin-bottom: 53px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dearF h2 {
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.sent-message {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 15px;
+    margin-bottom: 74px;
+}
+
+.sent-message p {
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.timer-content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 81px;
+}
+
+.timer {
+    width: 326px;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.timer__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer__label {
+    color: rgba(87, 71, 88, 0.5);
+    font-size: 20px;
+    font-family: 'Doloman Pavljenko';
+    font-weight: 300;
+}
+
+.timer__number {
+    line-height: 1;
+    font-size: 48px;
+    font-family: 'Mirra';
+    height: 53px;
+    color: rgba(121, 111, 122, 1);
+}
+
+.gathering-guests {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 95px;
+    width: 320px;
+}
+
+.gathering-guests__el {
+    max-width: 170px;
+}
+
+.gathering-guests__el:last-child {
+    align-self: flex-end;
+}
+
+.gathering-guests h3 {
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-size: 32px;
+    line-height: 1;
+}
+
+.gathering-guests h1 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.gathering-guests__hr {
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    background-color: rgba(136, 119, 132, 1);
+    top: 54px;
+    left: 40%;
+}
+
+.place {
+    padding-left: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.address h2 {
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.address p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.map {
+    border-bottom: 2px solid #887784;
+    display: flex;
+    padding-right: 16px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.map img {
+    width: 178px;
+    height: 187px;
+    object-fit: cover;
+}
+.map span {
+    color: white;
+    text-decoration: none;
+    padding: 0px 5px;
+    font-family: 'Doloman Pavljenko';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.2px;
+    background-color: #887784;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    height: 15px;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    color: rgba(241, 240, 246, 1);
+    font-weight: 300;
+    z-index: 1;
+}
+
+.dresscode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.dresscode hr {
+    width: 69px;
+    margin-bottom: 18px;
+}
+
+.dresscode p {
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 22px;
+    line-height: 1;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(4, 48px);
+    column-gap: 9px;
+    row-gap: 7px;
+    align-items: center;
+}
+
+.color {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.color:nth-child(1) {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.color:nth-child(2) {
+    background-color: rgba(217, 204, 188, 1);
+}
+
+.color:nth-child(3) {
+    background-color: rgba(188, 157, 154, 1);
+}
+
+.color:nth-child(4) {
+    background-color: rgba(79, 60, 46, 1);
+}
+
+.color:nth-child(5) {
+    background-color: rgba(191, 207, 223, 1);
+}
+
+.color:nth-child(6) {
+    background-color: rgba(89, 116, 145, 1);
+}
+
+.color:nth-child(7) {
+    background-color: rgba(23, 44, 73, 1);
+}
+
+.color:nth-child(8) {
+    background-color: rgba(111, 121, 130, 1);
+}
+
+.wishes {
+    padding-left: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.wishes-details {
+    display: flex;
+    width: 100%;
+    padding-right: 17px;
+    justify-content: flex-end;
+    margin-bottom: 142px;
+}
+
+.wishes-details p {
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    line-height: 1;
+}
+
+.accept {
+    margin-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.accept h2 {
+    text-align: center;
+}
+
+.accept p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 19.26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 24px;
+}
+
+.questions {
+    margin-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.questions h2 {
+    text-align: center;
+}
+
+.questions hr {
+    width: 35%;
+}
+
+.questions p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 23.11px;
+    text-align: center;
+}
+
+.end {
+    padding-bottom: 173px;
+}
+
+.end p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+.selected {
+    border-bottom: #08043a 1px solid;
+}
+
+#error-messages {
+    font-family: 'Doloman Pavljenko';
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 19.26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    white-space: pre-wrap;
+}
+
+.pleft {
+    background: url('../img/пузыри.png');
+    top: -136px;
+    left: -144px;
+    position: absolute;
+    transform: rotate(-42deg);
+    width: 164px;
+    height: 241px;
+    background-size: 164px 241px;
+}
+
+.pright {
+    background: url('../img/пузыри.png');
+    top: -190px;
+    right: -106px;
+    position: absolute;
+    transform: rotate(-32deg);
+    width: 164px;
+    height: 241px;
+    background-size: 164px 241px;
+}
+
+.pbottom {
+    background: url('../img/штука\ 3.png');
+    bottom: -266px;
+    left: -290px;
+    position: absolute;
+    transform: rotate(65deg);
+    height: 398px;
+    width: 366px;
+    background-size: 398px 267px;
+}
+
+.btn-music {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 20px;
+    bottom: 32px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.btn-music.play {
+    background-image: url('../img/2.png');
+}
+
+.btn-music.pause {
+    background-image: url('../img/1.png');
+}
