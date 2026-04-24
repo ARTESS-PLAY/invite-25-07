@@ -28,6 +28,21 @@ body {
     position: relative;
 }
 
+/* Масштаб макета 430px: при ширине окна < 800, scale = width/430; при 430px → 1. При ≥800 без scale. */
+.page-scaler {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.page-scaler__inner {
+    position: relative;
+    width: 430px;
+    flex-shrink: 0;
+}
+
 .container {
     max-width: 430px;
     margin: 0px auto;
