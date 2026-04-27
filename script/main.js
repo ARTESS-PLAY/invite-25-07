@@ -3,8 +3,7 @@ var SCALE_MAX_W = 800;
 
 function getPageScale() {
     var w = window.innerWidth;
-    if (w >= SCALE_MAX_W) return 1;
-    return w / DESIGN_W;
+    return Math.min(w / DESIGN_W, 1.5);
 }
 
 /* Стили из aos.css используют body[data-aos-duration] (значения в ms строкой, как в библиотеке). */
@@ -61,7 +60,7 @@ function rebuildScrollAnimations() {
                 }
             }
         },
-        { root: null, rootMargin: rootMargin, threshold: 0.01 }
+        { root: null, rootMargin: rootMargin, threshold: 0.01 },
     );
     for (var j = 0; j < nodes.length; j++) {
         scrollAnimObserver.observe(nodes[j]);
