@@ -178,12 +178,12 @@ body {
 }
 
 .visual .textura {
-    background: url('../img/bg_textura.png');
+    background: url('../img/bg_textura.webp');
     mix-blend-mode: multiply;
 }
 
 .visual .images {
-    background: url('../img/bg_images.png');
+    background: url('../img/bg_images.webp');
     background-position: top center;
     background-repeat: no-repeat;
     mix-blend-mode: multiply;
@@ -194,7 +194,7 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: url('../img/Вижуайло.png');
+    background: url('../img/Вижуайло.webp');
     position: absolute;
     content: '';
     opacity: 50%;
@@ -212,7 +212,7 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: url('../img/свет.png');
+    background: url('../img/свет.webp');
     position: absolute;
     content: '';
     opacity: 60%;
@@ -598,7 +598,7 @@ body {
 }
 
 .pleft {
-    background: url('../img/пузыри.png');
+    background: url('../img/пузыри.webp');
     top: -136px;
     left: -144px;
     position: absolute;
@@ -609,7 +609,7 @@ body {
 }
 
 .pright {
-    background: url('../img/пузыри.png');
+    background: url('../img/пузыри.webp');
     top: -190px;
     right: -106px;
     position: absolute;
@@ -620,7 +620,7 @@ body {
 }
 
 .pbottom {
-    background: url('../img/штука\ 3.png');
+    background: url('../img/штука\ 3.webp');
     bottom: -266px;
     left: -290px;
     position: absolute;
@@ -644,9 +644,9 @@ body {
 }
 
 .btn-music.play {
-    background-image: url('../img/2.png');
+    background-image: url('../img/2.webp');
 }
 
 .btn-music.pause {
-    background-image: url('../img/1.png');
+    background-image: url('../img/1.webp');
 }
