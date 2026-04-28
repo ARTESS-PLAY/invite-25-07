@@ -35,6 +35,12 @@ body {
     background-color: #f1f0f6;
 }
 
+@media (min-width: 830px) {
+    .page-scaler__inner {
+        box-shadow: 0 0 30px 5px rgba(7, 22, 61, 0.75);
+    }
+}
+
 /* Local AOS-compatible animation styles (CDN-independent). */
 [data-aos] {
     opacity: 0;
