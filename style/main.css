@@ -26,6 +26,13 @@ html {
 body {
     background-color: #f1f0f6;
     position: relative;
+    background-image: url('../img/Паттерн.webp');
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.page-scaler__inner {
+    background-color: #f1f0f6;
 }
 
 /* Local AOS-compatible animation styles (CDN-independent). */
